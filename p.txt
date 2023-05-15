@@ -1,0 +1,43 @@
+<form action="{{route('eskul.store')}}" method="post">
+    @csrf
+        <table>
+            <tr>
+                <td>
+                    nama
+                </td>
+                    <td>
+                     kelas
+                    </td>
+                    <td>
+                        no hp
+                    </td>
+                    <td>
+                        ekstrakulikuler
+                    </td>
+                    <td>
+                        aksi
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="nama">
+                </td>
+                <td>
+                    <input type="text" name="kelas">
+                </td>
+                <td>
+                    <input type="text" name="no_hp">
+                </td>
+                <td>
+                    <select name="ekstrakulikuler">
+                    <option value="basket">basket</option>
+                    <option value="futsal">futsal</option>
+                    <option value="voli">voli</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="submit"> tambah </button>
+                </td>
+            </tr>
+        </table>
+    </form>
